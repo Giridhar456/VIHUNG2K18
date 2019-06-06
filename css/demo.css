@@ -1,0 +1,179 @@
+/* div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,tdCSS reset */
+body { 
+	margin:0;
+	padding:0;
+}
+::-webkit-scrollbar { width: 1px;  }
+::-webkit-scrollbar-viewcart { background: rgba(0, 0, 0, 0.1); }
+::-webkit-scrollbar-thumb { background: rgba(0, 0, 0, 0.5); }
+
+html,body {
+	margin:0;
+	padding:0;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+fieldset,img { 
+	border:0;
+}
+input{
+	border:1px solid #b0b0b0;
+	padding:3px 5px 4px;
+	color:#979797;
+	width:190px;
+}
+address,caption,cite,code,dfn,th,var {
+	font-style:normal;
+	font-weight:normal;
+}
+ol,ul {
+	list-style:none;
+}
+caption,th {
+	text-align:left;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-size:100%;
+	font-weight:normal;
+}
+q:before,q:after {
+	content:'';
+}
+abbr,acronym { border:0;
+}
+/* General Demo Style */
+body{
+	font-family: 'Electrolize', Arial, sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+	color: black;
+}
+a{
+	text-decoration: none;
+}
+.clr{
+	clear: both;
+}
+/* Top Bar Style */
+.codrops-top{
+	line-height: 24px;
+	font-size: 11px;
+	background: rgba(255, 255, 255, 1);
+	text-transform: uppercase;
+	z-index: 9999;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 24px;
+	box-shadow: 1px 0px 2px rgba(0,0,0,0.2);
+	-webkit-animation: slideOut 0.5s ease-in-out 0.3s backwards;
+	-moz-animation: slideOut 0.5s ease-in-out 0.3s backwards;
+	-o-animation: slideOut 0.5s ease-in-out 0.3s backwards;
+	-ms-animation: slideOut 0.5s ease-in-out 0.3s backwards;
+	animation: slideOut 0.5s ease-in-out 0.3s backwards;
+}
+.codrops-top a{
+	padding: 0px 10px;
+	letter-spacing: 1px;
+	color: #333;
+	text-shadow: 0px 1px 1px #fff;
+	display: block;
+	float: left;
+}
+.codrops-top a:hover{
+	background: #fff;
+}
+.codrops-top span.right{
+	float: right;
+}
+.codrops-top span.right a{
+	float: left;
+	display: block;
+}
+/* Demo Buttons */
+#codrops-demos{
+    position: fixed;
+	z-index: 2000;
+	top: 50px;
+	right: 50px;
+}
+#codrops-demos a{
+    display: inline-block;
+	font-size: 12px;
+	width: 60px;
+	height: 24px;
+	color: #000;
+	line-height: 24px;
+	text-align: center;
+	box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+	background: rgba(255,255,255,0.9);
+	text-transform: uppercase;
+}
+#codrops-demos a:hover{
+	background: #ddd;
+	color: #000;
+}
+.codrops-top1{
+	-webkit-animation: slideOut 1.8s ease-in-out 0.6s backwards;
+	-moz-animation: slideOut 1.8s ease-in-out 0.6s backwards;
+	-o-animation: slideOut 1.8s ease-in-out 0.6s backwards;
+	-ms-animation: slideOut 1.8s ease-in-out 0.6s backwards;
+	 animation: slideOut 1.8s ease-in-out 0.6s backwards;
+}
+.codrops-top2{
+	-webkit-animation: slideOut 1.8s ease-in-out 1.0s backwards;
+	-moz-animation: slideOut 1.8s ease-in-out 1.0s backwards;
+	-o-animation: slideOut 1.8s ease-in-out 1.0s backwards;
+	-ms-animation: slideOut 1.8s ease-in-out 1.0s backwards;
+	 animation: slideOut 1.8s ease-in-out 1.0s backwards;
+}
+.codrops-top3{
+	-webkit-animation: slideOut 2.2s ease-in-out 1.3s backwards;
+	-moz-animation: slideOut 2.2s ease-in-out 1.3s backwards;
+	-o-animation: slideOut 2.2s ease-in-out 1.3s backwards;
+	-ms-animation: slideOut 2.2s ease-in-out 1.3s backwards;
+	 animation: slideOut 2.2s ease-in-out 1.3s backwards;
+}
+.codrops-top4{
+	-webkit-animation: slideOut 2.5s ease-in-out 1.6s backwards;
+	-moz-animation: slideOut 2.5s ease-in-out 1.6s backwards;
+	-o-animation: slideOut 2.5s ease-in-out 1.6s backwards;
+	-ms-animation: slideOut 2.5s ease-in-out 1.6s backwards;
+	 animation: slideOut 2.5s ease-in-out 1.6s backwards;
+}
+.codrops-top5{
+	-webkit-animation: slideOut 2.7s ease-in-out 1.8s backwards;
+	-moz-animation: slideOut 2.7s ease-in-out 1.8s backwards;
+	-o-animation: slideOut 2.7s ease-in-out 1.8s backwards;
+	-ms-animation: slideOut 2.7s ease-in-out 1.8s backwards;
+	 animation: slideOut 2.7s ease-in-out 1.8s backwards;
+}
+#codrops-demos a.current-demo,
+#codrops-demos a.current-demo:hover{
+	background: #000;
+	color: #fff;
+	cursor: default;
+}
+@-webkit-keyframes slideOut{
+	0%{top:-30px; opacity: 0;}
+	100%{top:0px; opacity: 1;}
+}
+@-moz-keyframes slideOut{
+	0%{top:-30px; opacity: 0;}
+	100%{top:0px; opacity: 1;}
+}
+@-o-keyframes slideOut{
+	0%{top:-30px; opacity: 0;}
+	100%{top:0px; opacity: 1;}
+}
+@-ms-keyframes slideOut{
+	0%{top:-30px; opacity: 0;}
+	100%{top:0px; opacity: 1;}
+}
+@keyframes slideOut{
+	0%{top:-30px; opacity: 0;}
+	100%{top:0px; opacity: 1;}
+}
